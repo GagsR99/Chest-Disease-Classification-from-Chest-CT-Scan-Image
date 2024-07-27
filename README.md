@@ -18,7 +18,7 @@ conda create -n chest python=3.8 -y
 ```
 
 ```bash
-conda activate visa
+conda activate chest
 ```
 
 ```bash
