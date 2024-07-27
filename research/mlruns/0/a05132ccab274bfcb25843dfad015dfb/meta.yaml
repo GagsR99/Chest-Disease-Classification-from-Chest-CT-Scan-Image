@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/gagan/Ineuron_Projects/Chest-Disease-Classification-from-Chest-CT-Scan-Image/research/mlruns/0/a05132ccab274bfcb25843dfad015dfb/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a05132ccab274bfcb25843dfad015dfb
+run_name: luxuriant-boar-50
+run_uuid: a05132ccab274bfcb25843dfad015dfb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722088608830
+status: 1
+tags: []
+user_id: gagan
