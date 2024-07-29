@@ -51,21 +51,31 @@ python app.py
 ### Mlflow dagshub connection uri
 
 ```bash
-MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Chest-Disease-Classification-from-Chest-CT-Scan-Image.mlflow \
-MLFLOW_TRACKING_USERNAME=entbappy \
-MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
+MLFLOW_TRACKING_URI=https://dagshub.com/GagsR99/MLflow-Experiment-demo.mlflow \
+MLFLOW_TRACKING_USERNAME=GagsR99 \
+MLFLOW_TRACKING_PASSWORD=1ce0980a74e5c079f4b00a13426865357af3a8dc \
 python script.py
+```
+
+```bash
+import dagshub
+dagshub.init(repo_owner='GagsR99', repo_name='MLflow-Experiment-demo', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
 ```
 
 
 ### RUN from bash terminal
 
 ```bash
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Chest-Disease-Classification-from-Chest-CT-Scan-Image.mlflow
+export MLFLOW_TRACKING_URI=https://dagshub.com/GagsR99/MLflow-Experiment-demo.mlflow
 
-export MLFLOW_TRACKING_USERNAME=entbappy 
+export MLFLOW_TRACKING_USERNAME=GagsR99 
 
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
+export MLFLOW_TRACKING_PASSWORD=1ce0980a74e5c079f4b00a13426865357af3a8dc
 
 ```
 
