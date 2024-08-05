@@ -51,7 +51,7 @@ python app.py
 ### Mlflow dagshub connection uri
 
 ```bash
-MLFLOW_TRACKING_URI=https://dagshub.com/GagsR99/MLflow-Experiment-demo.mlflow \
+MLFLOW_TRACKING_URI=https://dagshub.com/GagsR99/Chest-Disease-Classification-from-Chest-CT-Scan-Image.mlflow \
 MLFLOW_TRACKING_USERNAME=GagsR99 \
 MLFLOW_TRACKING_PASSWORD=1ce0980a74e5c079f4b00a13426865357af3a8dc \
 python script.py
@@ -59,7 +59,7 @@ python script.py
 
 ```bash
 import dagshub
-dagshub.init(repo_owner='GagsR99', repo_name='MLflow-Experiment-demo', mlflow=True)
+dagshub.init(repo_owner='GagsR99', repo_name='Chest-Disease-Classification-from-Chest-CT-Scan-Image', mlflow=True)
 
 import mlflow
 with mlflow.start_run():
@@ -71,7 +71,7 @@ with mlflow.start_run():
 ### RUN from bash terminal
 
 ```bash
-export MLFLOW_TRACKING_URI=https://dagshub.com/GagsR99/MLflow-Experiment-demo.mlflow
+export MLFLOW_TRACKING_URI=https://dagshub.com/GagsR99/Chest-Disease-Classification-from-Chest-CT-Scan-Image.mlflow
 
 export MLFLOW_TRACKING_USERNAME=GagsR99 
 
