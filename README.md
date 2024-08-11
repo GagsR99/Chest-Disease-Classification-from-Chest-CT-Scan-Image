@@ -86,3 +86,6 @@ export MLFLOW_TRACKING_PASSWORD=1ce0980a74e5c079f4b00a13426865357af3a8dc
 1. dvc init
 2. dvc repro
 3. dvc dag
+
+
+## [IMPORTANT] Change the 'Learning Rate' value in 'model_trainer.py' and 'params.yaml' files.
