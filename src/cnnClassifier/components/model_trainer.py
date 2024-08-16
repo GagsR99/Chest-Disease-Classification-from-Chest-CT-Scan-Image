@@ -4,7 +4,9 @@ from zipfile import ZipFile
 import tensorflow as tf
 import time
 from pathlib import Path
+import shutil
 from cnnClassifier.entity.config_entity import TrainingConfig
+
 
 
 class Training:
@@ -66,8 +68,6 @@ class Training:
     def save_model(path: Path, model: tf.keras.Model):
         model.save(path)
 
-
-
     
     def train(self):
         self.steps_per_epoch = self.train_generator.samples // self.train_generator.batch_size
@@ -94,3 +94,16 @@ class Training:
             path=self.config.trained_model_path,
             model=self.model
         )
+
+
+class FileOperations:
+    @staticmethod
+    def copy_file(source: Path, destination: Path):
+        shutil.copy(source, destination)
+        print(f'File copied from {source} to {destination}')
+    
+
+source_path = Path('/Users/gagan/Ineuron_Projects/Chest-Disease-Classification-from-Chest-CT-Scan-Image/artifacts/training/model.h5')
+destination_path = Path('/Users/gagan/Ineuron_Projects/Chest-Disease-Classification-from-Chest-CT-Scan-Image/model/')
+
+FileOperations.copy_file(source_path, destination_path)
